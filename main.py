@@ -1,3 +1,5 @@
+from art import logo
+
 MORSE_CODE_DICT = {  # Use all-caps for constants
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.',
     'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
@@ -21,7 +23,9 @@ def morse_to_string(morse):
 
 
 def main():
+    print
     while True:
+        print(logo)
         choice = input("Encode or Decode Morse Code (Type e to encode / d to decode / q to quit: ")
 
         if choice == 'e':
